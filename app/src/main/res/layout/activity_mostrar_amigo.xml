@@ -11,28 +11,26 @@
         android:id="@+id/nombre_amigo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="332dp"
         android:text="TextView"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/detalles"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.215"
+        app:layout_constraintHorizontal_bias="0.203"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.243" />
+        app:layout_constraintTop_toBottomOf="@+id/imagenxd"
+        app:layout_constraintVertical_bias="0.414" />
 
     <TextView
         android:id="@+id/detalles"
-        android:layout_width="268dp"
-        android:layout_height="161dp"
+        android:layout_width="302dp"
+        android:layout_height="99dp"
         android:text="TextView"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.773" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imagenxd"
@@ -43,16 +41,39 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.129"
+        app:layout_constraintVertical_bias="0.105"
         tools:srcCompat="@tools:sample/avatars" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonCheck"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="CALIFICAR"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/detalles" />
+        app:layout_constraintTop_toBottomOf="@+id/detalles"
+        app:layout_constraintVertical_bias="0.619" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/buttonCheck"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detalles"
+        app:layout_constraintVertical_bias="0.293" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sin calificar aún"
+        app:layout_constraintBottom_toTopOf="@+id/buttonCheck"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
 </androidx.constraintlayout.widget.ConstraintLayout>
