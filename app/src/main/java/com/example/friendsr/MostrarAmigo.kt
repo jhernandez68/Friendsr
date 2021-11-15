@@ -29,7 +29,7 @@ class MostrarAmigo : AppCompatActivity() {
                 ).show()
             }
         button.setOnClickListener {
-            textView.text = "You have got " + ratingBar.rating.toInt()+ " stars"
+            textView.text = "Calificaste con: " + ratingBar.rating.toInt()+ " estrellas"
         }
 
         val amigo = intent.getSerializableExtra("amigo") as Amigo
